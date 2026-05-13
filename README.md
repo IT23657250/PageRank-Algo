@@ -16,9 +16,9 @@ Due to its iterative nature and large data processing requirements, parallel imp
 
 # Serial C Code (Pseudo Code):
 
-initialize ranks for all nodes equally 
+    initialize ranks for all nodes equally 
 
-for (iteration = 0; iteration < max_iterations; iteration++) { 
+    for (iteration = 0; iteration < max_iterations; iteration++) { 
     for (each node i) { 
         new_rank[i] = 0; 
         for (each incoming neighbor j of node i) { 
@@ -31,4 +31,4 @@ for (iteration = 0; iteration < max_iterations; iteration++) {
     for (each node i) { 
         rank[i] = new_rank[i]; 
     } 
-}
+    }
